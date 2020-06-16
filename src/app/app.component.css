@@ -1,0 +1,15 @@
+router-outlet {
+    bottom: 70px;
+    overflow: hidden;
+    height: calc(100% - 70px);
+    top: 0;
+    width: 100%;
+}
+
+app-footer {
+    background-color: rgb(163, 239, 176);
+    bottom: 0;
+    height: 70px;
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,32 @@
+section {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    color: #333;
+    display: block;
+    height: 80%;
+    margin: 4% 10%;
+    padding: 0;
+    width: 80%;
+    overflow-y: auto;
+}
+
+p {
+    font: normal 20px sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a {
+    color: inherit;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: rgb(56, 87, 35);
+    display: block;
+}
+
+i#fb {
+    text-decoration: underline;
+}

@@ -1,0 +1,253 @@
+ nav {
+     position: absolute;
+     background-color: whitesmoke;
+     height: calc(100% - 180px);
+     margin-top: 110px;
+     margin-left: 0;
+     border: 1px solid #BEBEBE;
+     border-top: none;
+     border-bottom: none;
+     width: 311px;
+ }
+
+ main {
+     float: right;
+     background-color: whitesmoke;
+     border: none;
+     box-sizing: border-box;
+     height: calc(100% - 180px);
+     margin-top: 110px;
+     overflow: hidden;
+     padding: 0;
+     width: calc(100% - 311px);
+ }
+
+ #header-content {
+     color: rgb(56, 87, 35);
+     height: 110px;
+     padding: 30px 0;
+     margin-right: 15px;
+     float: right;
+     overflow: hidden;
+     width: 360px;
+ }
+
+ #user-info {
+     display: block;
+     height: 30px;
+     line-height: 23px;
+     margin-bottom: 10px;
+     font: normal 23px sans-serif;
+     width: 100%;
+ }
+
+ #nav-buttons {
+     display: block;
+     height: 20px;
+     line-height: 20px;
+     font: normal 20px sans-serif;
+     width: 100%;
+ }
+
+ #nav-buttons a {
+     display: inline-block;
+     margin-right: 30px;
+ }
+
+ a span {
+     font-weight: normal;
+     margin-right: 7px;
+ }
+
+ a img:hover {
+     text-decoration: none;
+ }
+
+ a, a:visited, a:active {
+     color: rgb(56, 87, 35);
+     cursor: pointer;
+     font: bold 19px sans-serif;
+ }
+
+ a:hover {
+     text-decoration: underline;
+ }
+
+ nav button {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     height: 70px;
+     line-height: 28px;
+     font-size: 28px;
+     width: 100%;
+     border: none;
+     border-top: 1px solid #BEBEBE;
+     outline: none;
+     padding-top: 21px;
+ }
+
+ nav button.active, nav button:hover {
+     /* filter: brightness(90%); */
+     background-color: rgb(163, 239, 176);
+ }
+
+ nav button.inactive {
+     background-color: whitesmoke;
+ }
+
+ button.mat-menu-item {
+     background-color: white;
+ }
+
+ button.mat-menu-item:hover, button.mat-menu-item:active {
+     border: none;
+     background-color: rgb(163, 239, 176);
+     outline: none;
+ }
+
+ /*For each section*/
+
+ /*News*/
+
+ .title, .date {
+     background-color: rgb(163, 239, 176);
+     border: groove 1px rgb(56, 87, 35);
+     border-collapse: collapse;
+     color: rgb(56, 87, 35);
+     display: inline-block;
+     font-size: 18px;
+     font-weight: bold;
+     height: 50px;
+     line-height: 18px;
+     margin: 0;
+     padding: 16px;
+     text-transform: uppercase;
+     text-align: center;
+ }
+
+ .title {
+     width: 82%;
+ }
+
+ .date {
+     width: 18%;
+ }
+
+ .info {
+     border: groove 1px rgb(56, 87, 35);
+     color: #333;
+     padding: 20px;
+     text-align: center;
+     width: 100%;
+ }
+
+ #news {
+     background-color: whitesmoke;
+     border: groove 1px rgb(56, 87, 35);
+     border-collapse: collapse;
+     height: 70%;
+     overflow-y: scroll;
+     margin: 90px 95px;
+ }
+
+ /*Recommendations, About us*/
+
+ #recommendations-text, #about-us-text {
+     margin-left: 20%;
+     margin-right: 8%;
+     margin-top: 5%;
+     font-size: 30px;
+     font-weight: bold;
+     color: rgb(62, 92, 40)
+ }
+
+ #recommendations-img, #about-us-img {
+     float: left;
+     margin-left: 5%;
+ }
+
+ #history span {
+     display: inline-block;
+     margin-left: 20%;
+ }
+
+ #history span span {
+     font-size: 30px;
+     color: rgb(56, 87, 35);
+     margin-left: 4%;
+ }
+
+ div.wrapper {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+ }
+
+ div#search-bar {
+     border: none;
+     border-bottom: 2px solid #BEBEBE;
+     border-top: 2px solid #BEBEBE;
+     display: block;
+     height: 60px;
+     width: 100%;
+     text-align: left;
+     outline: none;
+     background-color: whitesmoke;
+     box-sizing: border-box;
+ }
+
+ div#search-bar input {
+     background-color: whitesmoke;
+     border: none;
+     border-right: 2px solid #BEBEBE;
+     height: 100%;
+     font-size: 25px;
+     outline: none;
+     padding-left: 12px;
+     width: 250px;
+ }
+
+ div#search-bar img {
+     margin-bottom: 6px;
+     margin-left: 10px;
+     height: 36px;
+     width: 36px;
+ }
+
+ div#nav-button-container {
+     position: absolute;
+     width: 100%;
+     bottom: 0;
+ }
+
+ button#search {
+     display: inline-block;
+     width: 38px;
+     height: 38px;
+     margin-left: 10px;
+     margin-top: 6px;
+     border: none;
+     background: url("../../../../assets/images/icons/search.png");
+     background-repeat: no-repeat;
+     overflow: hidden;
+ }
+
+ div#result-bar {
+     width: 100%;
+     height: 70px;
+     overflow: hidden;
+     border: none;
+     background-color: transparent;
+     line-height: 18px;
+     font-size: 18px;
+     padding: 15px 10px;
+     color: #333;
+     text-align: justify;
+ }
+
+ #patients
+ {
+     overflow-y: auto;
+ }

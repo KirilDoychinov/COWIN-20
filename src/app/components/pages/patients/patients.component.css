@@ -1,0 +1,129 @@
+section {
+    box-sizing: border-box;
+    border: none;
+    color: #333;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#content {
+    display: block;
+    height: 260px;
+    padding: 0;
+    margin: 70px auto;
+    width: 1150px;
+    /*New*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: ridge;
+    background-color: rgba(29, 48, 73, 0.2)
+    
+}
+
+.card
+{
+    background-color: rgb(121, 121, 121);
+    color: whitesmoke;
+    margin: 2px;
+    padding: 2px;
+    height: 30px;
+    text-align: center;
+}
+
+#header
+{   
+    display: block;
+    height: 160px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 1150px;
+    border: ridge;
+}
+
+#alphabet
+{
+    padding-left: 150px;
+}
+
+#alphabet span
+{
+    height: 50px;
+    margin: 30px 15px;
+    font-size: 30px;
+    color: rgb(29, 48, 73)
+}
+
+#show
+{
+    text-align: right;
+    margin: 50px 10px 10px 0px;
+    font-size: 25px;
+}
+
+span
+{
+    text-decoration: underline;
+}
+
+
+#show-by
+{
+    font-style:italic;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cardDetails
+{
+    position: absolute;
+    display: block;
+    height: 240px;
+    padding: 0;
+    margin: 40px;
+    width: 1150px;
+    /*New*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: ridge;
+    background-color: rgba(29, 48, 73, 0.1);
+}
+
+.cardDetails img
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.patientProfile
+{
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+.patientButtons
+{
+    display: inline-block;
+    height: 180px;
+    width: 200px;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.patientButtons , .patientProfile
+{
+    display: inline-block;
+}
+
+.patientButtons button
+{
+    margin: 5px;
+    padding: 5px;
+}

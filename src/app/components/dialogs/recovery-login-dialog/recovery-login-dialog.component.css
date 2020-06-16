@@ -1,0 +1,65 @@
+h2 {
+    width: 100%;
+    color: rgb(56, 87, 35);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font: bold 24px sans-serif;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+mat-dialog-actions {
+    width: 100%;
+    display: block
+}
+
+p {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+input {
+    display: block;
+    width: 80%;
+    margin: 0 10% 6% 10%;
+    background-color: whitesmoke;
+    text-align: left;
+    outline: none;
+}
+
+button {
+    background-color: #BEBEBE;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    text-align: center;
+}
+
+button#submit {
+    width:45%;
+    margin-right: 5%;
+}
+
+div#buttons {
+    display: block;
+    width: 80%;
+    margin: 0 10% 6% 10%;
+    outline: none;
+    padding:none;
+}
+
+button#cancel {
+    width:45%;
+    margin-left: 5%;
+}
+
+button:active, button:hover {
+    outline: none;
+}
+  
+  

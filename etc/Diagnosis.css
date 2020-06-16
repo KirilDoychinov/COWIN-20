@@ -1,0 +1,53 @@
+main
+{
+    background-color: whitesmoke;
+}
+
+#Temporary-Frame
+{
+    height: 900px;
+    width: 1800px;
+    border: groove 5px black;
+}
+
+button
+{
+    display: inline-block;
+    padding: 5px 40px;
+}
+
+#upload-title
+{
+    height: 240px;
+    line-height: 250px;
+    text-align: center;
+    font-size: 3em;
+}
+
+#upload
+{
+    margin: 10%;
+}
+
+#desc
+{
+
+    height: 100px;
+    width: 70%;
+}
+
+#view
+{
+    color: black;
+}
+
+input[type="file"] {
+    display: block;
+    border: 1px solid #b5bcc7;
+    width: 630px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+

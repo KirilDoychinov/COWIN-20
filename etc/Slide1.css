@@ -1,0 +1,64 @@
+#kiro
+{
+    width: 1800px;
+    height: 900px;
+    border: groove;
+}
+
+
+section 
+{
+    width: 60%;
+    height: 40%;
+    margin: 20%,10%;
+    overflow-y:scroll;
+
+    
+}
+
+.article, .date, .info
+{
+    text-align: center;
+    
+    
+}
+
+.article, .date
+{
+    display:inline-block;
+    background-color: rgb(209, 241, 225);
+    height: 50px;
+    margin: 0px;
+
+    
+    border-left: groove 1px aqua;
+    border-top: groove 1px aqua;
+    border-bottom: groove 1px aqua;
+    border-color: groove 1px aqua;
+
+}
+
+.article
+{
+    
+    width: 81%;
+}
+
+.date
+{
+    width: 18%;
+}
+
+span
+{
+    vertical-align: middle; 
+}
+
+.info
+{
+    width: 95.5%;
+    border-left: groove 1px aqua;
+    border-top: groove 1px aqua;
+    border-bottom: groove 1px aqua;
+    padding: 20px;
+}

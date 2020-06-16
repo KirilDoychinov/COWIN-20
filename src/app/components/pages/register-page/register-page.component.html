@@ -1,0 +1,101 @@
+<header>
+  <div class="companyName">
+    COWIN-20
+  </div>
+  <div class="login-link">
+    Вече имате регистрация? Влезте <a href="/login">тук</a>
+  </div>
+</header>
+
+<main>
+  <form>
+    <fieldset id="personal">
+      <legend>Лична информация</legend>
+      <div class="top-field">
+        <span>Пол: </span>
+        <button type="button" [class]="selectButtonClasses[0]" (click)="changeGender(0)">Мъж</button>
+        <button type="button" [class]="selectButtonClasses[1]" (click)="changeGender(1)">Жена</button>
+      </div>
+
+      <div class="field">
+        <span class="field-title">Име: </span>
+        <input name="name" type="text" [(ngModel)]="name"
+          [placeholder]="this.selectedGenderId === 0 ? 'Иван' : 'Мария'">
+      </div>
+
+      <div class="field">
+        <span class="field-title">Фамилия: </span>
+        <input name="surname" type="text" [(ngModel)]="surname"
+          [placeholder]="this.selectedGenderId === 0 ? 'Иванов' : 'Георгиева'">
+      </div>
+
+      <div class="field">
+        <span class="field-title"> Дата на раждане:</span>
+
+        <input class="mini" name="day" type="text" placeholder="ДД" maxlength="2">
+        <input class="mini" name="month" type="text" placeholder="ММ" maxlength="2">
+        <input class="mini" name="year" type="text" placeholder="ГГГГ" maxlength="4">
+      </div>
+
+      <div class="field">
+        <span class="field-title">Държава:</span>
+
+        <select id="country" name="country" [(ngModel)]="selectedCountry">
+          <option *ngFor="let country of countries" [value]="country.value">{{country.title}}</option>
+        </select></div>
+
+      <div class="field">
+        <span class="field-title">Телефон:</span>
+
+        <div id="pseudoInput" style="border: 2px inset #EBE9ED;" ng-app="">
+          <img src="../../../../assets/images/flags/{{selectedCountry}}.png">
+          <span> {{getPhoneCode()}}</span>
+          <input id="phone" name="phone" type="text" [(ngModel)]="phone" maxlength="30">
+        </div>
+      </div>
+
+    </fieldset>
+
+    <fieldset id="account">
+      <legend>Акаунт</legend>
+
+      <div class="top-field">
+        <input type="radio" name="role" value="patient" checked> <span id="radio-text">Пациент</span>
+        <input type="radio" name="role" value="doctor"> <span id="radio-text">Лекар</span>
+        <input type="radio" name="role" value="lab-assistant"> <span id="radio-text">Лаборант</span>
+        <input type="radio" name="role" value="pharmacist"> <span id="radio-text">Фармацевт</span>
+      </div>
+
+      <div class="field">
+        <span class="field-title">Имейл: </span>
+        <input name="email" type="email" [(ngModel)]="email" placeholder="example@gmail.com">
+      </div>
+
+      <div class="field">
+        <span class="field-title">Потребителско име: </span>
+        <input name="username" type="text" [(ngModel)]="username">
+      </div>
+
+      <div class="field">
+        <span class="field-title">Парола: </span>
+        <input id="shorter-input" name="password" type="password" [(ngModel)]="password">
+        <div id="hint">?</div>
+      </div>
+
+      <div class="field">
+        <span class="field-title">Повторете парола: </span>
+        <input name="password-repeat" type="password" [(ngModel)]="repeatedPassword">
+      </div>
+
+      <div id="gdpr">
+        <input type="checkbox" name="consentment" value="consent">
+        <span id="consent">С настоящето декларирам, че съм запознат и съгласен с Правилата
+          за ползване на апликацията, Политиката за конфиденциалност и обработка на личните данни</span>
+      </div>
+    </fieldset>
+
+    <div id="bottom-container">
+      <button id="registerButton" type="button" (click)="register()">Регистрация</button>
+    </div>
+  </form>
+</main>

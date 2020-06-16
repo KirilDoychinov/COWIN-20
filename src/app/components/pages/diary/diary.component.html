@@ -1,0 +1,14 @@
+<div>
+  <section id="content" *ngFor="let item of content; let i = index" [hidden]="this.selectedNoteId !== i">
+    <h1>Дневник на {{this.navDates[i]}}</h1>
+    <textarea id="recommendation" rows="5" cols="60">{{content[i]}}
+      </textarea>
+  </section>
+</div>
+
+<nav>
+  <button type="button" *ngFor="let item of navDates; let i = index" (click)="changeNote(i)"
+    [class]="navButtonClasses[i]">
+    {{this.navNotes[i]}}
+  </button>
+</nav>

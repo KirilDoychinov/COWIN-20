@@ -1,0 +1,195 @@
+<header>
+
+  <div class="companyName">
+    COWIN-20
+  </div>
+
+  <div id="header-content">
+    <div id="user-info">
+      {{this.loggedUser}} &nbsp; [ {{this.getRoleName()}} ]
+    </div>
+
+    <div id="nav-buttons">
+      <a href="#">
+        <span>Помощ</span>
+        <img src="../../../../assets/images/icons/help.png" alt="Help" style="width:20px;height:20px;">
+      </a>
+
+      <a href="#">
+        <span>Изход</span>
+        <img src="../../../../assets/images/icons/exit.png" alt="Exit" style="width:20px;height:20px;">
+      </a>
+
+    </div>
+
+  </div>
+</header>
+
+<div class="wrapper" [hidden]="this.loggedUserRole !== 'patient'">
+  <nav>
+
+    <div id="search-bar">
+      <input name="searchInput" type="text" [(ngModel)]="searchInput" maxlength="30" placeholder="Търси...">
+      <button id="search" (click)="search()">
+      </button>
+    </div>
+
+    <div id="result-bar" [hidden]="searchedPhrase === ''">
+      <p>Няма намерени резултати за <i>{{this.searchedPhrase}}</i></p>
+    </div>
+
+    <div id="nav-button-container">
+      <button (click)="changeTab(0)" [class]="navButtonClasses[0]"> Новини</button>
+      <button (click)="changeTab(1)" [class]="navButtonClasses[1]"> Лекции</button>
+      <button (click)="changeTab(2)" [class]="navButtonClasses[2]"> Тестове</button>
+      <button (click)="changeTab(3)" [class]="navButtonClasses[3]">Дневник </button>
+      <button (click)="changeTab(4)" [class]="navButtonClasses[4]"> Хранителен режим</button>
+      <button id="universal-buttons" (click)="changeTab(5)" [class]="navButtonClasses[5]"> За Нас</button>
+
+    </div>
+  </nav>
+
+  <main>
+    <section id="news" [hidden]="this.selectedTabId !== 0">
+      <app-news></app-news>
+    </section>
+
+    <section id="lectures" [hidden]="this.selectedTabId !== 1">
+      <app-lectures></app-lectures>
+    </section>
+
+    <section id="test" [hidden]="this.selectedTabId !== 2">
+      <app-test></app-test>
+    </section>
+
+    <section [hidden]="this.selectedTabId !== 3">
+      <app-diary></app-diary>
+    </section>
+
+    <section id="recommendations" [hidden]="this.selectedTabId !== 4">
+      <app-recommendations></app-recommendations>
+    </section>
+
+    <section id="about" [hidden]="this.selectedTabId !== 5">
+      <app-about-us></app-about-us>
+    </section>
+
+  </main>
+
+</div>
+
+<!--FOR DOCTOR-->
+<div class="wrapper" [hidden]="this.loggedUserRole !== 'doctor'">
+  <nav>
+    <div id="search-bar">
+      <input name="searchInput" type="text" [(ngModel)]="searchInput" maxlength="30" placeholder="Търси...">
+      <button id="search" (click)="search()">
+      </button>
+    </div>
+
+    <div id="result-bar" [hidden]="searchedPhrase === ''">
+      <p>Няма намерени резултати за <i>{{this.searchedPhrase}}</i></p>
+    </div>
+
+    <div id="nav-button-container">
+      <button (click)="changeTab(0)" [class]="navButtonClasses[0]"> Новини</button>
+      <button (click)="changeTab(5)" [class]="navButtonClasses[5]"> Пациенти</button>
+      <button (click)="changeTab(1)" [class]="navButtonClasses[1]"> За Нас</button>
+    </div>
+
+  </nav>
+
+  <main>
+
+    <section id="news" [hidden]="this.selectedTabId !== 0">
+      <app-news></app-news>
+    </section>
+
+    <section id="patients" [hidden]="this.selectedTabId !== 5">
+      <app-patients></app-patients>
+    </section>
+
+    <section id="about" [hidden]="this.selectedTabId !== 1">
+      <app-about-us></app-about-us>
+    </section>
+
+  </main>
+
+</div>
+
+<!--FOR PHARMACIST-->
+<div class="wrapper" [hidden]="this.loggedUserRole !== 'pharmacist'">
+
+  <nav>
+
+    <div id="search-bar">
+      <input name="searchInput" type="text" [(ngModel)]="searchInput" maxlength="30" placeholder="Търси...">
+      <button id="search" (click)="search()">
+      </button>
+    </div>
+
+    <div id="result-bar" [hidden]="searchedPhrase === ''">
+      <p>Няма намерени резултати за <i>{{this.searchedPhrase}}</i></p>
+    </div>
+
+    <div id="nav-button-container">
+      <button (click)="changeTab(0)" [class]="navButtonClasses[0]"> Новини</button>
+      <button (click)="changeTab(1)" [class]="navButtonClasses[1]"> Лекарства</button>
+      <button (click)="changeTab(2)" [class]="navButtonClasses[2]"> За Нас</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="news" [hidden]="this.selectedTabId !== 0">
+      <app-news></app-news>
+    </section>
+
+    <section id="about" [hidden]="this.selectedTabId !== 2">
+      <app-about-us></app-about-us>
+    </section>
+
+  </main>
+
+</div>
+
+
+<!--LAB TEHNICIAN-->
+<div class="wrapper" [hidden]="this.loggedUserRole !== 'lab technician'">
+
+  <nav>
+
+    <div id="search-bar">
+      <input name="searchInput" type="text" [(ngModel)]="searchInput" maxlength="30" placeholder="Търси...">
+      <button id="search" (click)="search()">
+      </button>
+    </div>
+
+    <div id="result-bar" [hidden]="searchedPhrase === ''">
+      <p>Няма намерени резултати за <i>{{this.searchedPhrase}}</i></p>
+    </div>
+
+    <div id="nav-button-container">
+      <button (click)="changeTab(0)" [class]="navButtonClasses[0]"> Новини</button>
+      <button (click)="changeTab(1)" [class]="navButtonClasses[1]"> Изследвания</button>
+      <button (click)="changeTab(2)" [class]="navButtonClasses[2]"> За Нас</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="news" [hidden]="this.selectedTabId !== 0">
+      <app-news></app-news>
+    </section>
+
+    <section id="researches" [hidden]="this.selectedTabId !== 1">
+      <app-lab-researches></app-lab-researches>
+    </section>
+
+    <section id="about" [hidden]="this.selectedTabId !== 2">
+      <app-about-us></app-about-us>
+    </section>
+
+  </main>
+
+</div>

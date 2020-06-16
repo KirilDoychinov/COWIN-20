@@ -1,0 +1,29 @@
+section {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    color: #333;
+    display: block;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+section img {
+    border: none;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 20px;
+}
+
+article {
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 380px;
+    width: 810px;
+    font: normal 20px sans-serif;
+    /* font-style: italic; */
+    text-align: justify;
+    text-justify: inter-word;
+}

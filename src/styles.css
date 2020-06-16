@@ -1,0 +1,33 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html, body {
+    height: 100%;
+}
+
+app-root {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.companyName {
+    width: 200px;
+    float: left;
+    color: rgb(56, 87, 35);
+    font: bold 26px sans-serif;
+    margin: 42px 80px;
+}
+
+header {
+    background-color: rgb(163, 239, 176);
+    display: block;
+    height: 110px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}

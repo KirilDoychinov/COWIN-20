@@ -1,0 +1,57 @@
+section {
+    box-sizing: border-box;
+    border: none;
+    color: #333;
+    display: block;
+    height: 100%;
+    margin: 0;
+    /* overflow-y: auto; */
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#choice {
+    display: block;
+    height: 100px;
+    text-align: right;
+    padding: 20px 80px;;
+    margin-bottom: 20px;
+}
+
+#options {
+    display: block;
+    height: 30px;
+    text-align: right;
+    font-size: 20px;
+    padding: auto;
+}
+
+#quiz {
+    padding: 0;
+    margin: 20px auto;
+    width: 1000px;
+
+}
+
+.badge {
+    font-size: 15px;
+    margin-bottom: 15px;
+    /* background-color: rgb(163, 239, 176); */
+}
+
+.btn-warning {
+ /* background-color: rgb(163, 239, 176);  */
+}
+
+#myb {
+    margin: 6px;
+}
+
+#scroll {
+    width:100%; 
+    overflow-y:auto;
+    position:relative;
+    height: 570px;
+    padding: 20px;
+}

@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Забравено име или парола? Няма проблем!</h2>
+<mat-dialog-content>
+  <p>Въведете имейлът, с който сте се регистрирали, и ние ще Ви изпратим писмо с потвърждение на данните
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <input name="email" type="email" [(ngModel)]="recoveryEmail" placeholder="Имейл">
+  <div id="buttons">
+    <button id="submit" mat-button (click)="submit()">Изпрати имейл</button>
+    <button id="cancel" mat-button (click)="cancel()">Отмени</button>
+  </div>
+</mat-dialog-actions>

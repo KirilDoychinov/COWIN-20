@@ -1,0 +1,31 @@
+.title, .date {
+    background-color: rgb(163, 239, 176);
+    border: groove 1px rgb(56, 87, 35);
+    border-collapse: collapse;
+    color: rgb(56, 87, 35);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 18px;
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title {
+    width: 82%;
+}
+
+.date {
+    width: 18%;
+}
+
+.info {
+    border: groove 1px rgb(56, 87, 35);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}

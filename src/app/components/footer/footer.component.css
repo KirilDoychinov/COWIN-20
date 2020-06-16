@@ -1,0 +1,35 @@
+footer {
+    background-color: rgb(163, 239, 176);
+    box-sizing: border-box;
+    height: 70px;
+    padding: 16px;
+    text-align: center;
+}
+
+div#sponsors {
+    float: right;
+    height: 28px;
+    padding-right: 30px;
+    width: 700px;
+    overflow: hidden;
+}
+
+footer p {
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 0 10px 80px;
+    color: rgb(56, 87, 35);
+    font: bold 18px sans-serif;
+}
+
+footer img {
+    float: right;
+}
+
+div a {
+    display: inline;
+}
+
+a img {
+    margin-right: 16px;
+}

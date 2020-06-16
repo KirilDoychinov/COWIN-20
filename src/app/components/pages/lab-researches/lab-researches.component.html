@@ -1,0 +1,63 @@
+<section>
+
+  <div id="content">
+
+    <input id="filter-dropdown" list="patients" name="patient" placeholder="Име на пациент">
+    <datalist id="patients">
+      <option value="Михаил Кръстанов Билалов">
+      <option value="Мариан Иванов Вълев">
+      <option value="Ивайло Трендафилов Захариев">
+      <option value="Захари Марианов Бахаров">
+      <option value="Владимир Игнатов Пенев">
+      <option value="Александър Върбанов Сано">
+      <option value="Кирил Йовчев Ефремов">
+      <option value="Цветана  Куцарова Манева">
+      <option value="Ирена Петрова Милянкова">
+      <option value="Деян Георгиев Донков">
+      <option value="Теодора Костадинова Духовникова">
+      <option value="Георги Кирилов Стайков">
+      <option value="Силвия Порязова Петкова">
+      <option value="Явор Христов Бахаров">
+      <option value="Йоана Цанкова Буковска">
+      <option value="Любен Петков Кънев">
+      <option value="Бойко Лазаров Кръстанов">
+      <option value="Койна Петкова Русева">
+      <option value="Петър Миленов Попйорданов">
+      <option value="Христо Тодоров Мутафчиев">
+      <option value="Михаил Чорбаджиев Мутафов">
+      <option value="Любомира Станиславова Башева ">
+      <option value="Венцислав Коцев Янков">
+    </datalist>
+
+    <div id="file-selection">
+      <button type="button" (click)="searchFile()">Избери файл</button>
+      <input name="location" type="text" disabled>
+    </div>
+
+
+    <div id="control-buttons">
+      <button class="button" type="button">
+        <img src="../../../../assets/images/icons/upload.png">Добави
+      </button>
+      <button class="button" type="button">
+        <img src="../../../../assets/images/icons/cancel.png">Отмени
+      </button>
+    </div>
+
+
+
+    <aside>
+      Файлът не трябва да е по–голям от 5 MB. Поддържаните разширения са
+      .doc, .docx, .pdf, .jpeg, .png, .jpg и .txt.
+    </aside>
+
+
+
+    <nav>
+      <a href="#" target="_self">Виж всички качени файлове</a>
+    </nav>
+
+  </div>
+
+
+</section>

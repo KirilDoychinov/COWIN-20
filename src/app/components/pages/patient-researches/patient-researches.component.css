@@ -1,0 +1,108 @@
+section {
+    box-sizing: border-box;
+    border: none;
+    color: #333;
+    display: block;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    height: 24px;
+    margin-bottom: 52px;
+}
+
+#content {
+    display: block;
+    height: 380px;
+    padding: 0;
+    margin: 95px auto;
+    width: 790px;
+}
+
+#file-selection {
+    height: 40px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    width: 100%;
+}
+
+div#file-selection button {
+    background-color: #BEBEBE;
+    border: none;
+    color: black;
+    float: left;
+    font-size: 24px;
+    height: 40px;
+    margin-right: 0;
+    text-align: center;
+    width: 170px;
+}
+
+div#file-selection input {
+    background-color: white;
+    float: left;
+    height: 40px;
+    width: 620px;
+}
+
+#control-buttons {
+    display: block;
+    height: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    font: bold 30px sans-serif;
+    margin-bottom: 60px;
+}
+
+aside {
+    display: block;
+    color: #333;
+    font: normal 20px sans-serif;
+    font-style: italic;
+    height: 52px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.button {
+    background-color: #BEBEBE;
+    float: left;
+    font-size: 18px;
+    height: 30px;
+    margin-right: 20px;
+    padding: 0;
+    text-align: center;
+    width: 120px;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.button img {
+    float: right;
+    margin: 6px 9px 6px auto;
+}
+
+nav a, nav a:visited, nav a:active {
+    color: #333;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    filter: brightness(70%);
+}
